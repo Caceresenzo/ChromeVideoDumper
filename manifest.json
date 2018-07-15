@@ -1,0 +1,45 @@
+{
+	"name": "Video Dumper",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Dump video source link of any if there are any video element on a document",
+	"homepage_url": "http://caceresenzo.esy.es",
+	"icons": 
+	{
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+
+	"browser_action": 
+	{
+		"default_icon": "icons/icon19.png",
+		"default_title": "Video Dumper",
+		"default_popup": "src/browser_action/browser_action.html"
+	},
+
+	"permissions": 
+	[
+		"https://*/*",
+		"http://*/*",
+		"tabs"
+	],
+
+	"content_scripts": 
+	[
+		{
+			"matches": 
+			[
+				"http://*/*",
+				"https://*/*"
+			],
+
+			"js": 
+			[
+				"src/inject/inject.js"
+			],
+
+			"all_frames": true
+		}
+	]
+}
