@@ -21,7 +21,7 @@ This *chrome* extension automatically get a source of a &#x3C;video&#x3E; elemen
 #### Installation
 
  - Download this repository and extract it somewhere you will not touch-it anymore (the folder must stay)
- - Go on the [Chrome extension page](chrome://extensions/)
+ - Go on the Chrome extension page (chrome://extensions/)
  - Enable "Developper Mode" on the top right of the page
  - Click on the "Load non-packed extension"
  - Choose the folder of the extracted extension
